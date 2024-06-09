@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thong Yang</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    body {
+      font-family: system-ui;
+      background: lightblue;
+      color: white;
+      text-align: center;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>This is Thong's webpage! Hello!!!</h1>
+  <button id="colorChangeBtn">Change Text Color</button>
+
+  <script>
+    document.getElementById("colorChangeBtn").addEventListener("click", function() {
+      var h1Element = document.querySelector("h1");
+      var currentColor = h1Element.style.color;
+      var newColor = (currentColor === "gold") ? "purple" : "gold";
+      h1Element.style.color = newColor;
+    });
+  </script>
+</body>
+</html>
