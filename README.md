@@ -1,6 +1,5 @@
 # cs293securestaticwebsite
 
-## Overview
 Static webpage use for AWS S3 and CI/CD pipeline project.
 
 ## Tools use:
