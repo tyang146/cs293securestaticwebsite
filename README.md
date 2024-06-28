@@ -11,7 +11,7 @@ Static webpage use for AWS S3 and CI/CD pipeline project.
 - GitHub
 
 ## Getting Started
-1. Using Jenkins
-2. Using GitHub Actions
+**1. Using Jenkins**
+**2. Using GitHub Actions**
    
    [https://github.com/tyang146/cs293securestaticwebsite/blob/main/.github/workflows/s3.yml](https://github.com/tyang146/cs293securestaticwebsite/blob/main/.github/workflows/s3.yml)
