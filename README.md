@@ -12,9 +12,7 @@ Static webpage use for AWS S3 and CI/CD pipeline project.
 
 ## Getting Started
 **1. Using Jenkins**
-![photo1](https://github.com/tyang146/cs293securestaticwebsite/blob/main/Photos/1.jpeg)
-![photo2](https://github.com/tyang146/cs293securestaticwebsite/blob/main/Photos/2.jpeg)
-![photo3](https://github.com/tyang146/cs293securestaticwebsite/blob/main/Photos/3.jpeg)
+![jenkins](https://github.com/tyang146/cs293securestaticwebsite/blob/main/Photos/jenkins.jpeg)
 
 **2. Using GitHub Actions**
 
