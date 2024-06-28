@@ -20,6 +20,6 @@ jobs:
         # aws bucket name
         aws_bucket: cs293staticwebsite
         # directory to upload
-        source_dir: ./index.html
+        source_dir: ./ToBeUploaded
         # destination directory for upload
         destination_dir: / # optional, default is /
