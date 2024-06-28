@@ -2,7 +2,7 @@
 
 Static webpage use for AWS S3 and CI/CD pipeline project.
 
-## Tools use:
+## Technologies use:
 - AWS S3
 - AWS IAM
 - AWS CloudFront
