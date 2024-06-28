@@ -1,3 +1,0 @@
-              - name: AWS S3 Github Action
-                uses: keithweaver/aws-s3-github-action@v1.0.0
-            
