@@ -16,4 +16,4 @@ jobs:
         aws_key_id: ${{ secrets.AWS_S3_ACCESS_KEY }}
         aws_secret_access_key: ${{ secrets.AWS_S3_SECRET_KEY }}
         aws_bucket: cs293staticwebsite
-        source_dir: https://github.com/tyang146/cs293securestaticwebsite.git
+        source_dir: index.html
