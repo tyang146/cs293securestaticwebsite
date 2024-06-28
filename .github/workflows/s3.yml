@@ -13,7 +13,13 @@ jobs:
     - name: Upload-S3
       uses: shallwefootball/upload-s3-action@v1.3.3
       with:
+        # aws key id
         aws_key_id: ${{ secrets.AWS_S3_ACCESS_KEY }}
+        # aws secret access key
         aws_secret_access_key: ${{ secrets.AWS_S3_SECRET_KEY }}
+        # aws bucket name
         aws_bucket: cs293staticwebsite
-        source_dir: index.html
+        # directory to upload
+        source_dir: ./
+        # destination directory for upload
+        destination_dir: / # optional, default is /
