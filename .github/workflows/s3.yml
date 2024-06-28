@@ -10,7 +10,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Upload S3
+    - name: Upload-S3
       uses: shallwefootball/upload-s3-action@v1.3.3
       with:
         aws_key_id: ${{ secrets.AWS_S3_ACCESS_KEY }}
