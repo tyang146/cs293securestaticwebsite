@@ -5,8 +5,8 @@ Static webpage use for AWS S3 and CI/CD pipeline project.
 ## Technologies use:
 - AWS S3
 - AWS IAM
-- AWS EC2
-- AWS CloudFront
+- AWS EC2 (Optional if using Jenkins on EC2)
+- AWS CloudFront (Secure Hosting)
 - Jenkins or GitHub Actions
 - GitHub
 
@@ -15,4 +15,4 @@ Static webpage use for AWS S3 and CI/CD pipeline project.
 
 **2. Using GitHub Actions**
 
-YAML FILE: [https://github.com/tyang146/cs293securestaticwebsite/blob/main/.github/workflows/s3.yml](https://github.com/tyang146/cs293securestaticwebsite/blob/main/.github/workflows/s3.yml)
+YAML file: [https://github.com/tyang146/cs293securestaticwebsite/blob/main/.github/workflows/s3.yml](https://github.com/tyang146/cs293securestaticwebsite/blob/main/.github/workflows/s3.yml)
