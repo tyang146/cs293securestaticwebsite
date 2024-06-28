@@ -9,3 +9,4 @@ Static webpage use for AWS S3 and CI/CD pipeline project.
 - AWS CloudFront
 - Jenkins
 - GitHub
+- GitHub Actions
