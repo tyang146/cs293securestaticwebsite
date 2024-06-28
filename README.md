@@ -7,9 +7,8 @@ Static webpage use for AWS S3 and CI/CD pipeline project.
 - AWS IAM
 - AWS EC2
 - AWS CloudFront
-- Jenkins
+- Jenkins or GitHub Actions
 - GitHub
-- GitHub Actions
 
 ## Getting Started
 1. Using Jenkins
