@@ -18,12 +18,13 @@ jobs:
         with:
           python-version: '3.x'  # Specify the required Python version
 
+      # Install AWS CLI on machine 
       - name: Install AWS CLI
         run: |
           sudo apt-get install -y python3-pip 
           pip3 install awscli --upgrade --user 
 
-      # Synchronize local files (.) with S3 bucket (s3://cs293staticwebsite), deleting files in the bucket that are not in the source
+      # Run AWS CLI command to Synchronize local files (.) with S3 bucket (s3://cs293staticwebsite), deleting files in the bucket that are not in the source
       - name: Upload to S3
         run: |
           aws s3 sync . s3://cs293staticwebsite --delete 
