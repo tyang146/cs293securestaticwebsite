@@ -1,31 +1,32 @@
 name: Deploy to AWS S3
 
 on:
-  push: # update files in S3 every time code is push to repo
+  push: # Trigger the workflow on push events
     branches:
-      - main  # Replace with your branch name
+      - main  # Specify the branch to watch for push events
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # Use the latest Ubuntu runner
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2 # Checkout the repository's code
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v2 # Set up Python environment
         with:
-          python-version: '3.x'  # Replace with your Python version if needed
+          python-version: '3.x'  # Specify the required Python version
 
       - name: Install AWS CLI
         run: |
-          sudo apt-get install -y python3-pip
-          pip3 install awscli --upgrade --user
+          sudo apt-get install -y python3-pip 
+          pip3 install awscli --upgrade --user 
 
+      # Synchronize local files (.) with S3 bucket (s3://cs293staticwebsite), deleting files in the bucket that are not in the source
       - name: Upload to S3
         run: |
-          aws s3 sync . s3://cs293staticwebsite --delete # delete previous files and add new files 
+          aws s3 sync . s3://cs293staticwebsite --delete 
         env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_S3_ACCESS_KEY}} # IAM access key goes here
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_S3_SECRET_KEY }} # IAM access secret key goes here 
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_S3_ACCESS_KEY }} # AWS IAM access key ID from GitHub Secrets
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_S3_SECRET_KEY }} # AWS IAM secret access key from GitHub Secrets
