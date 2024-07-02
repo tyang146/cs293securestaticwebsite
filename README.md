@@ -5,7 +5,7 @@ Static webpage use for AWS S3 and CI/CD pipeline project.
 ## Technologies use:
 - AWS S3
 - AWS IAM
-- AWS EC2
+- AWS EC2 (Jenkins Installed)
 - AWS CloudFront (Secure Hosting)
 - Jenkins or GitHub Actions
 - GitHub
