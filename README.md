@@ -1,6 +1,6 @@
 # cs293securestaticwebsite
 
-Static webpage use for AWS S3 and CI/CD pipeline project.
+Static webpage use for AWS and CI/CD pipeline project.
 
 ## Technologies Used:
 - AWS S3
